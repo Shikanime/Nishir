@@ -5,6 +5,9 @@ metadata:
   namespace: shikanime
 spec:
   template:
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: "macvlan1,macvlan2"
     spec:
       containers:
         - name: jellyfin
