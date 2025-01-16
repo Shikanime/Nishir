@@ -23,8 +23,8 @@
       devenv.shells.default = {
         containers = pkgs.lib.mkForce { };
         languages = {
-          opentofu.enable = true;
           nix.enable = true;
+          opentofu.enable = true;
         };
         cachix = {
           enable = true;
@@ -35,6 +35,7 @@
           deadnix.enable = true;
           flake-checker.enable = true;
           shellcheck.enable = true;
+          terraform-validate.enable = true;
           tflint.enable = true;
         };
         packages = [
